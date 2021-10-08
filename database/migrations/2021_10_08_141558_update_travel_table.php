@@ -13,6 +13,7 @@ class UpdateTravelTable extends Migration
      */
     public function up()
     {
+        // CREO TABELLA TRAVEL
         Schema::table('travel', function (Blueprint $table) {
             $table->tinyInteger('duration');
             $table->foreignId('id_transport');

@@ -13,6 +13,7 @@ class CreateTransportsTable extends Migration
      */
     public function up()
     {
+        // CREO NUOVA TABELLA TRANSPORTS
         Schema::create('transports', function (Blueprint $table) {
             $table->tinyInteger("duration");
             $table->foreignId("id_transport");
