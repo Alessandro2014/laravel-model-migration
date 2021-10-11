@@ -8,7 +8,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $travels = Travel::all();
-        return view('home', compact('travels'));
+        return view('home');
     }
 }
